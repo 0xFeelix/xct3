@@ -762,3 +762,8 @@ footer{
 }
 
 
+@media (max-width: 375px){
+	.info-list ul{
+		text-align: left;
+	}
+}
