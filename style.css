@@ -626,7 +626,7 @@ footer{
 }
 
 
-/* Resume styles */
+/* Resume-page styles */
 .section{
 	margin-top: 100px;
 	padding: 0 150px 60px 150px;
@@ -660,6 +660,7 @@ footer{
 	opacity: 0.4;
 }
 
+/* ABOUT */
 .about-img img{
 	width: 100px;
 	border-radius: 50%;
@@ -686,7 +687,10 @@ footer{
 	margin: 12px 0 0;
 }
 
-
+/* RESUME */
+.resume .cols{
+	display: flex;
+}
 
 
 
@@ -704,6 +708,12 @@ footer{
 @media (max-width: 990px){
 	.works{
 		margin-left: 50px;
+	}
+}
+
+@media (max-width: 900px){
+	.resume .cols{
+		flex-direction: column;
 	}
 }
 
@@ -740,11 +750,11 @@ footer{
 		width: 100vw;;
 	}
 
-	.section{
+	.about{
 		text-align: center;
 		padding-right: 20px;
 	}
-	.section .content{
+	.about .content{
 		display: flex;
 		flex-direction: column;
 	}
