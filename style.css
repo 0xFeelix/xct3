@@ -51,7 +51,7 @@ table {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-		text-decoration: none !important;
+	text-decoration: none !important;
 }
 
 /* Variables */
@@ -346,6 +346,7 @@ footer{
 }
 
 .category-link:before, .category-link:after {content: 'View Project';}
+.about-desc a:before, .about-desc a:after {content: 'Dowload CV';}
 
 .glitch-link:before {
 	left: -3px;
@@ -362,8 +363,14 @@ footer{
 .glitch-link:hover {
 	background: var(--orange);
 	color: var(--white);
-	border: var(--orange);;
+	border: var(--orange);
 }
+
+.fill-glitch{
+	background: var(--orange);
+	border: var(--orange);
+}
+
 .glitch-link:hover:before {
 	animation: glitch-test 1.5s infinite linear alternate-reverse;
 }
@@ -534,7 +541,7 @@ footer{
 .video a:hover::after{content: '\f03d';}
 .links a:hover::after{content: '\f0c1';}
 .music a:hover::after{content: '\f001';}
-.content a:hover::after{content: '+';}
+.element-item.content a:hover::after{content: '+';}
 
 .element-item .desc{
 	text-transform: uppercase;
@@ -619,11 +626,65 @@ footer{
 }
 
 
+/* Resume styles */
+.section{
+	margin-top: 100px;
+	padding: 0 150px 60px 150px;
+	color: var(--gray);
+}
+
+.section.about{
+	margin-top: 300px;
+}
+.about .content{
+	display: flex;
+}
 
 
+.section .title{
+	display: inline-block;
+	position: relative;
+	font-size: 13px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: var(--white);
+	margin-bottom: 30px;
+}.section .title::after{
+	content: '';
+	position: absolute;
+	top: 12px;
+	left: 0;
+	height: 5px;
+	width: 100%;
+	background: var(--gray);
+	opacity: 0.4;
+}
 
+.about-img img{
+	width: 100px;
+	border-radius: 50%;
+}
+.about-desc{
+	margin-left: 25px;
+}.about-desc p{
+	line-height: 23px;
+}
 
-
+.info-list{
+	margin: 30px 0 30px 0;
+}
+.info-list ul{
+	padding: 0;
+}
+.info-list span{
+	color: var(--orange);
+}
+.info-list li{
+	display: inline-block;
+	vertical-align: top;
+	width: 32%;
+	margin: 12px 0 0;
+}
 
 
 
@@ -635,6 +696,11 @@ footer{
 
 
 /* Media Queries */
+@media (max-width: 992px){
+	.section{
+		padding: 0 0 60px 0;
+	}
+}
 @media (max-width: 990px){
 	.works{
 		margin-left: 50px;
@@ -673,6 +739,27 @@ footer{
 		height: 250px;
 		width: 100vw;;
 	}
+
+	.section{
+		text-align: center;
+		padding-right: 20px;
+	}
+	.section .content{
+		display: flex;
+		flex-direction: column;
+	}
+	.about-desc p{
+		margin-top: 20px;
+	}
+	.info-list ul{
+		display: flex;
+		flex-direction: column;
+	}
+	.info-list li{
+		width: auto;
+	}
+
+
 }
 
 @media (max-width: 600px){
