@@ -11,6 +11,7 @@ body {
 	line-height: 1;
 	font-family: 'Roboto Mono' !important;
 	background-color: #26262D !important;
+	overflow: hidden;
 	padding: 30px;
 }
 /* Variables */
@@ -25,23 +26,23 @@ body {
 
 .wrapper{
 	position: relative;
-	background: #31313A;
+	background: var(--black);
 	color: var(--white);
 	font-size: 13px;
-	height: calc(100vh - 60px);
+	height: 100vh;
 	overflow: auto;
-	padding-bottom: 60px;
 }
 
 /* Header */
 header{
 	position: fixed;
-	margin-top: 30px;
 	padding: 30px 30px 10px 30px;
 	width: calc(100vw - 60px);
 	z-index: 99;
+	height: 60px;
 	top: 0;
-	background: #31313A;
+	background: var(--black);
+	
 }
 .header, .footer{
 	display: flex;
@@ -85,12 +86,12 @@ header{
 /* Footer */
 footer{
 	position: fixed;
-	bottom: 0;
+	bottom: 30px;
 	padding: 30px 30px 10px 30px;
 	width: calc(100vw - 60px);
+	height: 60px;
 	z-index: 99;
-	background: #31313A;
-	margin-bottom: 30px;
+	background: var(--black);
 }
 .copy p{
 	font-size: 11px;
