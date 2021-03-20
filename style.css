@@ -85,7 +85,7 @@ header{
 /* Footer */
 footer{
 	position: fixed;
-	bottom: 30px;
+	bottom: 0;
 	padding: 30px 30px 10px 30px;
 	width: calc(100vw - 60px);
 	z-index: 99;
