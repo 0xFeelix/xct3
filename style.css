@@ -133,6 +133,7 @@ footer{
 	text-align: center;
 	padding-top: 35vh;
 	padding-bottom: 20vh;
+	height: 100vh;
 }
 .started-content .nav-pages{
 	color: var(--gray);
@@ -449,7 +450,6 @@ footer{
 
 /* Portfolio works */
 .works{
-	margin-top: 300px;
 	margin-left: 100px;
 }
 
@@ -595,7 +595,7 @@ footer{
 }
 
 .section.about{
-	margin-top: 300px;
+	margin-top: 0;
 }
 .about .content{
 	display: flex;
@@ -651,6 +651,58 @@ footer{
 /* RESUME */
 .resume .cols{
 	display: flex;
+}
+
+.resume-item{
+	position: relative;
+	padding: 0 30px 40px;
+}
+.resume-item:first-child {
+    padding-top: 0;
+}
+.resume-item:last-child:before {
+    padding-top: 0;
+	margin: 0;
+	border: 0;
+	background: transparent;
+}
+.resume-item:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: #f26b38;
+}
+
+.resume-item .date {
+    position: relative;
+    top: -10px;
+    margin: 0 0 5px;
+    display: inline-block;
+    padding: 0 5px;
+    height: 20px;
+    line-height: 18px;
+    font-weight: 500;
+    font-size: 11px;
+    color: var(--orange);
+    border: 1px solid var(--orange);
+}
+.resume-item .date:before {
+    content: '';
+    width: 29px;
+    height: 1px;
+    position: absolute;
+    left: -30px;
+    top: 9px;
+    background: var(--orange);
+}
+.resume-item .name {
+	font-size: 12px;
+    font-weight: 600;
+    color: var(--white);
+    margin: 0 0 10px;
 }
 
 
