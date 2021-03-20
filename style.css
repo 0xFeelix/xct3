@@ -11,7 +11,6 @@ body {
 	line-height: 1;
 	font-family: 'Roboto Mono' !important;
 	background-color: #26262D !important;
-	padding: 30px;
 }
 /* Variables */
 :root{
@@ -24,6 +23,7 @@ body {
 /* Main styles */
 
 .wrapper{
+	margin: 30px;
 	position: relative;
 	background: #31313A;
 	color: var(--white);
