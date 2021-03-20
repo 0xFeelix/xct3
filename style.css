@@ -706,8 +706,25 @@ footer{
     margin: 0 0 10px;
 }
 
-
-
+/* SERVICE */
+.service-item{
+	margin-bottom: 30px;
+}
+.service-item span{
+	color: var(--white);
+	font-weight: 600;
+	font-size: 12px;
+}
+.service-item i{
+	color: var(--orange);
+	margin-right: 5px;
+	font-size: 15px;
+}
+.service-item p{
+	line-height: 23px;
+	margin-top: 10px;
+	color: var(--gray);
+}
 
 
 
