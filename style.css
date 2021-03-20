@@ -307,6 +307,9 @@ footer{
 
 .category-link:before, .category-link:after {content: 'View Project';}
 .about-desc a:before, .about-desc a:after {content: 'Dowload CV';}
+.pricing-item .basic:before, .pricing-item .basic:after{content: 'Buy Basic';}
+.pricing-item .popular:before, .pricing-item .popular:after{content: 'Buy Popular';}
+.pricing-item .ultimate:before, .pricing-item .ultimate:after{content: 'Buy Ultimate';}
 
 .glitch-link:before {
 	left: -3px;
@@ -726,9 +729,59 @@ footer{
 	color: var(--gray);
 }
 
+/* PRICING */
+.pricing-item{
+	text-align: center;
+}
+.pricing-item i{
+	color: var(--orange);
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.pricing-item .name{
+	font-weight: 600;
+	color: var(--white);
+}
+.pricing-item .amount{
+	color: var(--white);
+	font-size: 40px;
+	font-weight: bold;
+	margin: 10px 0;
+}
+.amount sup{
+	left: 15px;
+	font-size: 13px;
+	top: -15px
+}
+.amount sub{
+	font-weight: 600;
+	font-size: 12px;
+	right: 15px;
+	bottom: 1px
+}
 
+.pricing-item{
+	margin-bottom: 50px;
+}
+.pricing-item li{
+	margin-bottom: 8px;
+}
+.pricing-item ul{
+	margin-bottom: 30px;
+}
+.pricing-item .disable{
+	text-decoration: line-through !important;
+}
+.pricing-item .new{
+	background: var(--orange);
+	color: var(--white);
+	padding: 0 4px;
+	border-radius: 2px;
+}
 
-
+.disable, .nd{
+	opacity: .5;
+}
 
 /* Media Queries */
 @media (max-width: 992px){
