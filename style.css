@@ -24,11 +24,12 @@ body {
 
 .wrapper{
 	margin: 30px;
-	position: relative;
+	position: fixed;
 	background: #31313A;
 	color: var(--white);
 	font-size: 13px;
 	height: calc(100vh - 60px);
+	width: calc(100vw - 60px);
 	overflow: auto;
 	padding-bottom: 60px;
 }
