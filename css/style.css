@@ -28,7 +28,7 @@ body {
 	background: #31313A;
 	color: var(--white);
 	height: calc(100% - 60px);
-	width: calc(100vw - 60px);
+	width: calc(100% - 60px);
 	font-size: 13px;
 	overflow: auto;
 	padding-bottom: 60px;
