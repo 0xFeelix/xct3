@@ -90,7 +90,7 @@ footer{
 	width: calc(100vw - 60px);
 	z-index: 99;
 	background: var(--black);
-	margin-bottom: 30px;
+	
 }
 .copy p{
 	font-size: 11px;
