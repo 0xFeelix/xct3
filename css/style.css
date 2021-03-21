@@ -401,6 +401,23 @@ footer{
 
 
 
+.mouse-btn{
+	animation-duration: 1s;
+	animation-name: slidein;
+	animation-iteration-count:infinite;
+  }
+  
+  @keyframes slidein {
+	from {
+	  margin-bottom: 10px;
+	}
+  
+	to {
+	  margin-top: 10px;
+	}
+  }
+
+
 /* Isotope styles */
 .button {
   text-decoration: none;
