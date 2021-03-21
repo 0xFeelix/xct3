@@ -24,11 +24,12 @@ body {
 
 .wrapper{
 	margin: 30px;
-	position: relative;
+	position: fixed;
 	background: #31313A;
 	color: var(--white);
+	height: calc(100% - 60px);
+	width: calc(100vw - 60px);
 	font-size: 13px;
-	height: calc(100vh - 60px);
 	overflow: auto;
 	padding-bottom: 60px;
 }
@@ -90,7 +91,7 @@ footer{
 	width: calc(100vw - 60px);
 	z-index: 99;
 	background: var(--black);
-	
+	margin-bottom: 30px;
 }
 .copy p{
 	font-size: 11px;
