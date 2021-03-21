@@ -827,11 +827,12 @@ footer{
 		left: -200px;
 		display: flex;
 		padding: 30px;
-		height: calc(100vh - 100px);
+		height: calc(100vh - 120px);
 		background: var(--black);
 		z-index: 9;
 		box-shadow: 5px 1px 12px -5px rgba(242, 107, 56, 0.33);
 		transition: .4s;
+		overflow: hidden;
 	}
 	.menu-nav ul{
 		flex-direction: column;
