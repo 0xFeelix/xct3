@@ -144,22 +144,6 @@ typewriter.typeString('Web Designer and Freelancer.')
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Mobile menu script */
 jQuery(function($){
 
@@ -179,3 +163,16 @@ jQuery(function($){
 });
 
 
+
+
+/* Color palette script */
+$('.palette-colors li').click(function(){
+
+  $('body').attr('data-default-color', $(this).data('color'));
+  $('.palette-colors li').removeClass('current-color');
+  $(this).addClass('current-color')
+});
+
+$('.palette-cog i').click(function(){
+  $('.color-palette').toggleClass('active-palette');
+})
