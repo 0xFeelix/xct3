@@ -118,10 +118,10 @@ footer{
 
 .mouse-btn{
 	position: absolute;
-	bottom: 10%;
+	bottom: 15%;
 	right: 49%;
 	color: var(--orange);
-	cursor: pointer;
+	cursor: default;
 }.mouse-btn:hover{
 	color: var(--orange);
 }
