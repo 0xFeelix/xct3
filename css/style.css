@@ -470,28 +470,50 @@ footer{
 
 
 
-/* Portfolio works */
+/* Portfolio and Blog styles */
 .works{
 	margin-left: 100px;
 }
 
 
-/* ---- grid ---- */
 
-/* clear fix */
-
-
-.grid{
+.grid , .blog-item{
 	text-align: center;
 }
 
-/* ---- .element-item ---- */
-.element-item {
+
+.element-item , .blog-item{
 	padding: 0 20px 40px;
 }
 
-
-
+.blog-item img{
+	width: 100%;
+	height: 282px;
+	object-fit: cover;
+}
+.blog-item .date{
+	margin: 15px 0;
+}
+.blog-item .date a{
+    padding: 1px 8px;
+    height: 20px;
+    line-height: 18px;
+    font-weight: 500;
+    font-size: 11px;
+    color: var(--orange);
+    border: 1px solid var(--orange);
+}
+.blog-item .name{
+	text-transform: uppercase;
+	color: var(--white);
+	font-weight: 600;
+	transition: .4s ease all;
+}.blog-item .name:hover{
+	color: var(--orange);
+}
+.blog-item .description p{
+	margin-top: 10px;
+}
 .element-item img{
 	width: 320px;
 }
@@ -500,8 +522,12 @@ footer{
 	display: flex;
 	position: relative;
 }
+.blog-item .image a{
+	display: flex;
+	position: relative;
+}
 
-.element-item a:hover::after{
+.element-item a:hover::after , .blog-item .image a:hover::after{
 	content: '';
 	font-family: 'Font Awesome 5 Pro';
 	font-size: 25px;
@@ -517,6 +543,8 @@ footer{
 	background: rgba(241, 107, 61, .92);
 }
 
+
+.blog-item .image a:hover::after{content: '\f518';}
 .images a:hover::after{content: '\f302';}
 .video a:hover::after{content: '\f03d';}
 .links a:hover::after{content: '\f0c1';}
@@ -698,7 +726,7 @@ footer{
     background: #f26b38;
 }
 
-.resume-item .date {
+.resume-item .date{
     position: relative;
     top: -10px;
     margin: 0 0 5px;

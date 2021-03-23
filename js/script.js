@@ -54,10 +54,6 @@ $('.button-group').each( function( i, buttonGroup ) {
 
 
 
-
-
-
-
 // Masonry script
 $(window).bind('load', function() {
 
@@ -67,6 +63,7 @@ $(window).bind('load', function() {
   });
 
 });
+
 
 
 
