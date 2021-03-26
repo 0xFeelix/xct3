@@ -106,6 +106,7 @@
 [data-default-color='green'] .nav-pages a:hover{color: var(--cgreen);}
 [data-default-color='green'] .button.is-checked{color: var(--cgreen);}
 [data-default-color='green'] .service-item i{color: var(--cgreen);}
+[data-default-color='green'] #typing span{color: var(--cgreen);}
 [data-default-color='green'] .pricing-item i{color: var(--cgreen);}
 [data-default-color='green'] .info-list span{color: var(--cgreen);}
 [data-default-color='green'] .resume-item .date{color: var(--cgreen); border: 1px solid var(--cgreen)}
@@ -132,6 +133,7 @@
 [data-default-color='grey'] .nav-pages a:hover{color: var(--cgrey);}
 [data-default-color='grey'] .button.is-checked{color: var(--cgrey);}
 [data-default-color='grey'] .service-item i{color: var(--cgrey);}
+[data-default-color='grey'] #typing span{color: var(--cgrey);}
 [data-default-color='grey'] .pricing-item i{color: var(--cgrey);}
 [data-default-color='grey'] .info-list span{color: var(--cgrey);}
 [data-default-color='grey'] .resume-item .date{color: var(--cgrey); border: 1px solid var(--cgrey)}
@@ -157,6 +159,7 @@
 [data-default-color='blue'] .nav-pages a:hover{color: var(--cblue);}
 [data-default-color='blue'] .button.is-checked{color: var(--cblue);}
 [data-default-color='blue'] .service-item i{color: var(--cblue);}
+[data-default-color='blue'] #typing span{color: var(--cblue);}
 [data-default-color='blue'] .pricing-item i{color: var(--cblue);}
 [data-default-color='blue'] .info-list span{color: var(--cblue);}
 [data-default-color='blue'] .resume-item .date{color: var(--cblue); border: 1px solid var(--cblue)}
@@ -182,6 +185,7 @@
 [data-default-color='yellow'] .nav-pages a:hover{color: var(--cyellow);}
 [data-default-color='yellow'] .button.is-checked{color: var(--cyellow);}
 [data-default-color='yellow'] .service-item i{color: var(--cyellow);}
+[data-default-color='yellow'] #typing span{color: var(--cyellow);}
 [data-default-color='yellow'] .pricing-item i{color: var(--cyellow);}
 [data-default-color='yellow'] .info-list span{color: var(--cyellow);}
 [data-default-color='yellow'] .resume-item .date{color: var(--cyellow); border: 1px solid var(--cyellow)}
@@ -207,6 +211,7 @@
 [data-default-color='red'] .nav-pages a:hover{color: var(--cred);}
 [data-default-color='red'] .button.is-checked{color: var(--cred);}
 [data-default-color='red'] .service-item i{color: var(--cred);}
+[data-default-color='red'] #typing span{color: var(--cred);}
 [data-default-color='red'] .pricing-item i{color: var(--cred);}
 [data-default-color='red'] .info-list span{color: var(--cred);}
 [data-default-color='red'] .resume-item .date{color: var(--cred); border: 1px solid var(--cred)}
@@ -233,6 +238,7 @@
 [data-default-color='purple'] .nav-pages a:hover{color: var(--cpurple);}
 [data-default-color='purple'] .button.is-checked{color: var(--cpurple);}
 [data-default-color='purple'] .service-item i{color: var(--cpurple);}
+[data-default-color='purple'] #typing span{color: var(--cpurple);}
 [data-default-color='purple'] .pricing-item i{color: var(--cpurple);}
 [data-default-color='purple'] .info-list span{color: var(--cpurple);}
 [data-default-color='purple'] .resume-item .date{color: var(--cpurple); border: 1px solid var(--cpurple)}
@@ -258,6 +264,7 @@
 [data-default-color='orange'] .nav-pages a:hover{color: var(--corange);}
 [data-default-color='orange'] .button.is-checked{color: var(--corange);}
 [data-default-color='orange'] .service-item i{color: var(--corange);}
+[data-default-color='orange'] #typing span{color: var(--corange);}
 [data-default-color='orange'] .pricing-item i{color: var(--corange);}
 [data-default-color='orange'] .info-list span{color: var(--corange);}
 [data-default-color='orange'] .resume-item .date{color: var(--corange); border: 1px solid var(--corange)}
@@ -283,6 +290,7 @@
 [data-default-color='brown'] .nav-pages a:hover{color: var(--cbrown);}
 [data-default-color='brown'] .button.is-checked{color: var(--cbrown);}
 [data-default-color='brown'] .service-item i{color: var(--cbrown);}
+[data-default-color='brown'] #typing span{color: var(--cbrown);}
 [data-default-color='brown'] .pricing-item i{color: var(--cbrown);}
 [data-default-color='brown'] .info-list span{color: var(--cbrown);}
 [data-default-color='brown'] .resume-item .date{color: var(--cbrown); border: 1px solid var(--cbrown)}
@@ -308,6 +316,7 @@
 [data-default-color='lime'] .nav-pages a:hover{color: var(--clime);}
 [data-default-color='lime'] .button.is-checked{color: var(--clime);}
 [data-default-color='lime'] .service-item i{color: var(--clime);}
+[data-default-color='lime'] #typing span{color: var(--clime);}
 [data-default-color='lime'] .pricing-item i{color: var(--clime);}
 [data-default-color='lime'] .info-list span{color: var(--clime);}
 [data-default-color='lime'] .resume-item .date{color: var(--clime); border: 1px solid var(--clime)}
