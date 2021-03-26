@@ -611,6 +611,9 @@ footer{
 	padding: 0 20px 0 20px;
 }
 
+.mfp-figure{
+	position: relative; 
+}
 
 .mfp-wrap{
 	overflow: hidden auto;
@@ -626,8 +629,19 @@ footer{
 	padding: 10px;
 	background: rgba(0,0,0,.6);
 }
-.mfp-close{
-	display: none;	
+
+.mfp-close::after{
+	content: '\f067';
+	font-family: 'Font Awesome 5 Pro';
+	font-weight: 100;
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+	padding: 15px 20px;
+	background-color: var(--color4);
+	color: var(--white);
+	border: none;
 }
 .mfp-preloader{
 	display: none;
