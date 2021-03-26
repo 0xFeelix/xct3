@@ -1,15 +1,17 @@
 :root{
-	--cgreen: #47A846;
-	--cgrey: #6C757D;
-	--cblue: #087afc;
-	--cyellow: #FFC22B;
-	--cred: #DC3E45;
-	--cpurple: #4D388C;
-	--corange: #F86D26;
-	--cbrown: #4F342E;
-	--clime: #827717;
+	--color: #F26B38;
+	--color2: rgba(241, 107, 61, .92);
+	--color3: #999999;
 }
-
+.green{background: #47A846;}
+.grey{background: #6C757D;}
+.blue{background: #087afc;}
+.yellow{background: #FFC22B;}
+.red{background: #DC3E45;}
+.purple{background: #4D388C;}
+.orange{background: #F86D26;}
+.brown{background: #4F342E;}
+.lime{background: #827717;}
 	/* 
 	green - rgba(71, 168, 70, .92)
 	grey - rgba(108, 117, 125, .92)
@@ -80,7 +82,7 @@
 	border-radius: 50%;
 	left: -3px;
 	top: -3px;
-	border: 2px solid var(--cgreen);
+	border: 2px solid var(--color);
 }
 
 /* Toggle menu */
@@ -93,243 +95,3 @@
 .skin-background{
 	transition: .4s ease-in-out;
 }
-
-
-
-/* Colors */
-
-/* GREEN */
-[data-color='green']{background-color: var(--cgreen);}
-[data-default-color='green'] .none .skin-background{background: var(--cgreen);}
-[data-default-color='green'] .none .current-color:before{border: 2px solid var(--cgreen);}
-
-[data-default-color='green'] .nav-pages a:hover{color: var(--cgreen);}
-[data-default-color='green'] .button.is-checked{color: var(--cgreen);}
-[data-default-color='green'] .service-item i{color: var(--cgreen);}
-[data-default-color='green'] #typing span{color: var(--cgreen);}
-[data-default-color='green'] .pricing-item i{color: var(--cgreen);}
-[data-default-color='green'] .info-list span{color: var(--cgreen);}
-[data-default-color='green'] .resume-item .date{color: var(--cgreen); border: 1px solid var(--cgreen)}
-[data-default-color='green'] .blog-item .date a{color: var(--cgreen); border: 1px solid var(--cgreen)}
-[data-default-color='green'] .resume-item .date:before{background: var(--cgreen);}
-[data-default-color='green'] .pricing-item .new{background: var(--cgreen);}
-[data-default-color='green'] .resume-item:before{background: var(--cgreen);}
-[data-default-color='green'] .button span:hover{color: var(--cgreen);}
-[data-default-color='green'] .menu-nav a:hover{color: var(--cgreen);}
-[data-default-color='green'] .soc a:hover{color: var(--cgreen);}
-[data-default-color='green'] li::marker{color: var(--cgreen) !important;}
-[data-default-color='green'] .grid .desc p:hover{color: var(--cgreen);}
-[data-default-color='green'] .blog-item .name:hover{color: var(--cgreen);}
-[data-default-color='green'] .mouse-btn{color: var(--cgreen);}
-[data-default-color='green'] .element-item a:hover::after{background: rgba(71, 168, 70, .92)}
-[data-default-color='green'] .blog-item .image a:hover::after{background: rgba(71, 168, 70, .92)}
-
-
-/* GREY */
-[data-color='grey']{background-color: var(--cgrey);}
-[data-default-color='grey'] .skin-background{background: var(--cgrey);}
-[data-default-color='grey'] .current-color:before{border: 2px solid var(--cgrey);}
-
-[data-default-color='grey'] .nav-pages a:hover{color: var(--cgrey);}
-[data-default-color='grey'] .button.is-checked{color: var(--cgrey);}
-[data-default-color='grey'] .service-item i{color: var(--cgrey);}
-[data-default-color='grey'] #typing span{color: var(--cgrey);}
-[data-default-color='grey'] .pricing-item i{color: var(--cgrey);}
-[data-default-color='grey'] .info-list span{color: var(--cgrey);}
-[data-default-color='grey'] .resume-item .date{color: var(--cgrey); border: 1px solid var(--cgrey)}
-[data-default-color='grey'] .blog-item .date a{color: var(--cgrey); border: 1px solid var(--cgrey)}
-[data-default-color='grey'] .resume-item .date:before{background: var(--cgrey);}
-[data-default-color='grey'] .pricing-item .new{background: var(--cgrey);}
-[data-default-color='grey'] .resume-item:before{background: var(--cgrey);}
-[data-default-color='grey'] .button span:hover{color: var(--cgrey);}
-[data-default-color='grey'] .menu-nav a:hover{color: var(--cgrey);}
-[data-default-color='grey'] .soc a:hover{color: var(--cgrey);}
-[data-default-color='grey'] li::marker{color: var(--cgrey) !important;}
-[data-default-color='grey'] .grid .desc p:hover{color: var(--cgrey);}
-[data-default-color='grey'] .blog-item .name:hover{color: var(--cgrey);}
-[data-default-color='grey'] .mouse-btn{color: var(--cgrey);}
-[data-default-color='grey'] .element-item a:hover::after{background: rgba(108, 117, 125, .92)}
-[data-default-color='grey'] .blog-item .image a:hover::after{background: rgba(108, 117, 125, .92)}
-
-/* BLUE */
-[data-color='blue']{background-color: var(--cblue);}
-[data-default-color='blue'] .skin-background{background: var(--cblue);}
-[data-default-color='blue'] .current-color:before{border: 2px solid var(--cblue);}
-
-[data-default-color='blue'] .nav-pages a:hover{color: var(--cblue);}
-[data-default-color='blue'] .button.is-checked{color: var(--cblue);}
-[data-default-color='blue'] .service-item i{color: var(--cblue);}
-[data-default-color='blue'] #typing span{color: var(--cblue);}
-[data-default-color='blue'] .pricing-item i{color: var(--cblue);}
-[data-default-color='blue'] .info-list span{color: var(--cblue);}
-[data-default-color='blue'] .resume-item .date{color: var(--cblue); border: 1px solid var(--cblue)}
-[data-default-color='blue'] .blog-item .date a{color: var(--cblue); border: 1px solid var(--cblue)}
-[data-default-color='blue'] .resume-item .date:before{background: var(--cblue);}
-[data-default-color='blue'] .pricing-item .new{background: var(--cblue);}
-[data-default-color='blue'] .resume-item:before{background: var(--cblue);}
-[data-default-color='blue'] .button span:hover{color: var(--cblue);}
-[data-default-color='blue'] .menu-nav a:hover{color: var(--cblue);}
-[data-default-color='blue'] .soc a:hover{color: var(--cblue);}
-[data-default-color='blue'] li::marker{color: var(--cblue) !important;}
-[data-default-color='blue'] .grid .desc p:hover{color: var(--cblue);}
-[data-default-color='blue'] .blog-item .name:hover{color: var(--cblue);}
-[data-default-color='blue'] .mouse-btn{color: var(--cblue);}
-[data-default-color='blue'] .element-item a:hover::after{background: rgba(8, 122, 252, .92)}
-[data-default-color='blue'] .blog-item .image a:hover::after{background: rgba(8, 122, 252, .92)}
-
-/* YELLOW */
-[data-color='yellow']{background-color: var(--cyellow);}
-[data-default-color='yellow'] .skin-background{background: var(--cyellow);}
-[data-default-color='yellow'] .current-color:before{border: 2px solid var(--cyellow);}
-
-[data-default-color='yellow'] .nav-pages a:hover{color: var(--cyellow);}
-[data-default-color='yellow'] .button.is-checked{color: var(--cyellow);}
-[data-default-color='yellow'] .service-item i{color: var(--cyellow);}
-[data-default-color='yellow'] #typing span{color: var(--cyellow);}
-[data-default-color='yellow'] .pricing-item i{color: var(--cyellow);}
-[data-default-color='yellow'] .info-list span{color: var(--cyellow);}
-[data-default-color='yellow'] .resume-item .date{color: var(--cyellow); border: 1px solid var(--cyellow)}
-[data-default-color='yellow'] .blog-item .date a{color: var(--cyellow); border: 1px solid var(--cyellow)}
-[data-default-color='yellow'] .resume-item .date:before{background: var(--cyellow);}
-[data-default-color='yellow'] .pricing-item .new{background: var(--cyellow);}
-[data-default-color='yellow'] .resume-item:before{background: var(--cyellow);}
-[data-default-color='yellow'] .button span:hover{color: var(--cyellow);}
-[data-default-color='yellow'] .menu-nav a:hover{color: var(--cyellow);}
-[data-default-color='yellow'] .soc a:hover{color: var(--cyellow);}
-[data-default-color='yellow'] li::marker{color: var(--cyellow) !important;}
-[data-default-color='yellow'] .grid .desc p:hover{color: var(--cyellow);}
-[data-default-color='yellow'] .blog-item .name:hover{color: var(--cyellow);}
-[data-default-color='yellow'] .mouse-btn{color: var(--cyellow);}
-[data-default-color='yellow'] .element-item a:hover::after{background: rgba(255, 194, 43, .92)}
-[data-default-color='yellow'] .blog-item .image a:hover::after{background: rgba(255, 194, 43, .92)}
-
-/* RED */
-[data-color='red']{background-color: var(--cred);}
-[data-default-color='red'] .skin-background{background: var(--cred);}
-[data-default-color='red'] .current-color:before{border: 2px solid var(--cred);}
-
-[data-default-color='red'] .nav-pages a:hover{color: var(--cred);}
-[data-default-color='red'] .button.is-checked{color: var(--cred);}
-[data-default-color='red'] .service-item i{color: var(--cred);}
-[data-default-color='red'] #typing span{color: var(--cred);}
-[data-default-color='red'] .pricing-item i{color: var(--cred);}
-[data-default-color='red'] .info-list span{color: var(--cred);}
-[data-default-color='red'] .resume-item .date{color: var(--cred); border: 1px solid var(--cred)}
-[data-default-color='red'] .blog-item .date a{color: var(--cred); border: 1px solid var(--cred)}
-[data-default-color='red'] .resume-item .date:before{background: var(--cred);}
-[data-default-color='red'] .pricing-item .new{background: var(--cred);}
-[data-default-color='red'] .resume-item:before{background: var(--cred);}
-[data-default-color='red'] .button span:hover{color: var(--cred);}
-[data-default-color='red'] .menu-nav a:hover{color: var(--cred);}
-[data-default-color='red'] .soc a:hover{color: var(--cred);}
-[data-default-color='red'] li::marker{color: var(--cred) !important;}
-[data-default-color='red'] .grid .desc p:hover{color: var(--cred);}
-[data-default-color='red'] .blog-item .name:hover{color: var(--cred);}
-[data-default-color='red'] .mouse-btn{color: var(--cred);}
-[data-default-color='red'] .element-item a:hover::after{background: rgba(220, 62, 69, .92)}
-[data-default-color='red'] .blog-item .image a:hover::after{background: rgba(220, 62, 69, .92)}
-
-
-/* PURPLE */
-[data-color='purple']{background-color: var(--cpurple);}
-[data-default-color='purple'] .skin-background{background: var(--cpurple);}
-[data-default-color='purple'] .current-color:before{border: 2px solid var(--cpurple);}
-
-[data-default-color='purple'] .nav-pages a:hover{color: var(--cpurple);}
-[data-default-color='purple'] .button.is-checked{color: var(--cpurple);}
-[data-default-color='purple'] .service-item i{color: var(--cpurple);}
-[data-default-color='purple'] #typing span{color: var(--cpurple);}
-[data-default-color='purple'] .pricing-item i{color: var(--cpurple);}
-[data-default-color='purple'] .info-list span{color: var(--cpurple);}
-[data-default-color='purple'] .resume-item .date{color: var(--cpurple); border: 1px solid var(--cpurple)}
-[data-default-color='purple'] .blog-item .date a{color: var(--cpurple); border: 1px solid var(--cpurple)}
-[data-default-color='purple'] .resume-item .date:before{background: var(--cpurple);}
-[data-default-color='purple'] .pricing-item .new{background: var(--cpurple);}
-[data-default-color='purple'] .resume-item:before{background: var(--cpurple);}
-[data-default-color='purple'] .button span:hover{color: var(--cpurple);}
-[data-default-color='purple'] .menu-nav a:hover{color: var(--cpurple);}
-[data-default-color='purple'] .soc a:hover{color: var(--cpurple);}
-[data-default-color='purple'] li::marker{color: var(--cpurple) !important;}
-[data-default-color='purple'] .grid .desc p:hover{color: var(--cpurple);}
-[data-default-color='purple'] .blog-item .name:hover{color: var(--cpurple);}
-[data-default-color='purple'] .mouse-btn{color: var(--cpurple);}
-[data-default-color='purple'] .element-item a:hover::after{background: rgba(77, 56, 140, .92)}
-[data-default-color='purple'] .blog-item .image a:hover::after{background: rgba(77, 56, 140, .92)}
-
-/* ORANGE */
-[data-color='orange']{background-color: var(--corange);}
-[data-default-color='orange'] .skin-background{background: var(--corange);}
-[data-default-color='orange'] .current-color:before{border: 2px solid var(--corange);}
-
-[data-default-color='orange'] .nav-pages a:hover{color: var(--corange);}
-[data-default-color='orange'] .button.is-checked{color: var(--corange);}
-[data-default-color='orange'] .service-item i{color: var(--corange);}
-[data-default-color='orange'] #typing span{color: var(--corange);}
-[data-default-color='orange'] .pricing-item i{color: var(--corange);}
-[data-default-color='orange'] .info-list span{color: var(--corange);}
-[data-default-color='orange'] .resume-item .date{color: var(--corange); border: 1px solid var(--corange)}
-[data-default-color='orange'] .blog-item .date a{color: var(--corange); border: 1px solid var(--corange)}
-[data-default-color='orange'] .resume-item .date:before{background: var(--corange);}
-[data-default-color='orange'] .pricing-item .new{background: var(--corange);}
-[data-default-color='orange'] .resume-item:before{background: var(--corange);}
-[data-default-color='orange'] .button span:hover{color: var(--corange);}
-[data-default-color='orange'] .menu-nav a:hover{color: var(--corange);}
-[data-default-color='orange'] .soc a:hover{color: var(--corange);}
-[data-default-color='orange'] li::marker{color: var(--corange) !important;}
-[data-default-color='orange'] .grid .desc p:hover{color: var(--corange);}
-[data-default-color='orange'] .blog-item .name:hover{color: var(--corange);}
-[data-default-color='orange'] .mouse-btn{color: var(--corange);}
-[data-default-color='orange'] .element-item a:hover::after{background: rgba(248, 109, 38, .92)}
-[data-default-color='orange'] .blog-item .image a:hover::after{background: rgba(248, 109, 38, .92)}
-
-/* BROWN */
-[data-color='brown']{background-color: var(--cbrown);}
-[data-default-color='brown'] .skin-background{background: var(--cbrown);}
-[data-default-color='brown'] .current-color:before{border: 2px solid var(--cbrown);}
-
-[data-default-color='brown'] .nav-pages a:hover{color: var(--cbrown);}
-[data-default-color='brown'] .button.is-checked{color: var(--cbrown);}
-[data-default-color='brown'] .service-item i{color: var(--cbrown);}
-[data-default-color='brown'] #typing span{color: var(--cbrown);}
-[data-default-color='brown'] .pricing-item i{color: var(--cbrown);}
-[data-default-color='brown'] .info-list span{color: var(--cbrown);}
-[data-default-color='brown'] .resume-item .date{color: var(--cbrown); border: 1px solid var(--cbrown)}
-[data-default-color='brown'] .blog-item .date a{color: var(--cbrown); border: 1px solid var(--cbrown)}
-[data-default-color='brown'] .resume-item .date:before{background: var(--cbrown);}
-[data-default-color='brown'] .pricing-item .new{background: var(--cbrown);}
-[data-default-color='brown'] .resume-item:before{background: var(--cbrown);}
-[data-default-color='brown'] .button span:hover{color: var(--cbrown);}
-[data-default-color='brown'] .menu-nav a:hover{color: var(--cbrown);}
-[data-default-color='brown'] .soc a:hover{color: var(--cbrown);}
-[data-default-color='brown'] li::marker{color: var(--cbrown) !important;}
-[data-default-color='brown'] .grid .desc p:hover{color: var(--cbrown);}
-[data-default-color='brown'] .blog-item .name:hover{color: var(--cbrown);}
-[data-default-color='brown'] .mouse-btn{color: var(--cbrown);}
-[data-default-color='brown'] .element-item a:hover::after{background: rgba(79, 52, 46, .92)}
-[data-default-color='brown'] .blog-item .image a:hover::after{background: rgba(79, 52, 46, .92)}
-
-/* LIME */
-[data-color='lime']{background-color: var(--clime);}
-[data-default-color='lime'] .skin-background{background: var(--clime);}
-[data-default-color='lime'] .current-color:before{border: 2px solid var(--clime);}
-
-[data-default-color='lime'] .nav-pages a:hover{color: var(--clime);}
-[data-default-color='lime'] .button.is-checked{color: var(--clime);}
-[data-default-color='lime'] .service-item i{color: var(--clime);}
-[data-default-color='lime'] #typing span{color: var(--clime);}
-[data-default-color='lime'] .pricing-item i{color: var(--clime);}
-[data-default-color='lime'] .info-list span{color: var(--clime);}
-[data-default-color='lime'] .resume-item .date{color: var(--clime); border: 1px solid var(--clime)}
-[data-default-color='lime'] .blog-item .date a{color: var(--clime); border: 1px solid var(--clime)}
-[data-default-color='lime'] .resume-item .date:before{background: var(--clime);}
-[data-default-color='lime'] .pricing-item .new{background: var(--clime);}
-[data-default-color='lime'] .resume-item:before{background: var(--clime);}
-[data-default-color='lime'] .button span:hover{color: var(--clime);}
-[data-default-color='lime'] .menu-nav a:hover{color: var(--clime);}
-[data-default-color='lime'] .soc a:hover{color: var(--clime);}
-[data-default-color='lime'] li::marker{color: var(--clime) !important;}
-[data-default-color='lime'] .grid .desc p:hover{color: var(--clime);}
-[data-default-color='lime'] .blog-item .name:hover{color: var(--clime);}
-[data-default-color='lime'] .mouse-btn{color: var(--clime);}
-[data-default-color='lime'] .element-item a:hover::after{background: rgba(130, 119, 23, .92)}
-[data-default-color='lime'] .blog-item .image a:hover::after{background: rgba(130, 119, 23, .92)}

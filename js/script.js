@@ -163,9 +163,73 @@ jQuery(function($){
 
 
 /* Color palette script */
+
+const theme = document.querySelector(':root');
+const btns = document.querySelectorAll('.colors');
+
+btns.forEach(function(btn){
+
+    btn.addEventListener("click", function(e){
+
+        const color = e.currentTarget.classList;
+
+        if(color.contains("green")){
+            theme.style.setProperty("--color", "#47A846");
+            theme.style.setProperty("--color2", "rgba(71, 168, 70, .92)");
+            theme.style.setProperty("--color3", "#47A846");
+        }
+        else if(color.contains("grey")){
+            theme.style.setProperty("--color", "#6C757D");
+            theme.style.setProperty("--colo2", "rgba(108, 117, 125, .92)");
+            theme.style.setProperty("--color3", "#6C757D");
+        }
+        else if(color.contains("blue")){
+            theme.style.setProperty("--color", "#087afc");
+            theme.style.setProperty("--color2", "rgba(8, 122, 252, .92)");
+            theme.style.setProperty("--color3", "#087afc");
+        }
+        else if(color.contains("yellow")){
+            theme.style.setProperty("--color", "#FFC22B");
+            theme.style.setProperty("--colo2", "rgba(255, 194, 43, .92)");
+            theme.style.setProperty("--color3", "#FFC22B");
+        }
+        else if(color.contains("red")){
+            theme.style.setProperty("--color", "#DC3E45");
+            theme.style.setProperty("--color2", "rgba(220, 62, 69, .92)");
+            theme.style.setProperty("--color3", "#DC3E45");
+        }
+        else if(color.contains("purple")){
+            theme.style.setProperty("--color", "#4D388C");
+            theme.style.setProperty("--color2", "rgba(77, 56, 140, .92)");
+            theme.style.setProperty("--color3", "#4D388C");
+        }
+        else if(color.contains("orange")){
+            theme.style.setProperty("--color", "#F86D26");
+            theme.style.setProperty("--color2", "rgba(248, 109, 38, .92)");
+            theme.style.setProperty("--color3", "#F86D26");
+        }
+        else if(color.contains("brown")){
+            theme.style.setProperty("--color", "#4F342E");
+            theme.style.setProperty("--color2", "rgba(79, 52, 46, .92)");
+            theme.style.setProperty("--color3", "#4F342E");
+        }
+        else if(color.contains("lime")){
+            theme.style.setProperty("--color", "#827717");
+            theme.style.setProperty("--color2", "rgba(130, 119, 23, .92)");
+            theme.style.setProperty("--color3", "#827717");
+        }
+        else{
+            theme.style.setProperty("--color", "#8e44add");
+            theme.style.setProperty("--color2", "rgba(241, 107, 61, .92)");
+            theme.style.setProperty("--color3", "#8e44add");
+        }
+    });
+});
+
+
+
 $('.palette-colors li').click(function(){
 
-  $('body').attr('data-default-color', $(this).data('color'));
   $('.palette-colors li').removeClass('current-color');
   $(this).addClass('current-color')
 });

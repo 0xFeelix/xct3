@@ -14,7 +14,6 @@ body {
 }
 /* Variables */
 :root{
-	--orange: #f26b38;
 	--gray: #999999;
 	--white: #f0f0f0;
 	--black: #31313A;
@@ -59,7 +58,7 @@ header{
 	color: var(--white);
 	transition: .4s ease;
 }.mobile-menu:hover{
-	color: var(--orange);
+	color: var(--color);
 }
 .menu-nav ul{
 	display: flex;
@@ -71,7 +70,7 @@ header{
 	color: #fff;
 	transition: .4s;
 }.menu-nav a:hover, .nav-pages a:hover{
-	color: var(--orange);
+	color: var(--color);
 }
 
 
@@ -103,7 +102,7 @@ footer{
 	transition: .4s;
 	color: var(--white);
 }.soc a:hover{
-	color: var(--orange);
+	color: var(--color);
 }
 
 
@@ -120,10 +119,10 @@ footer{
 	position: absolute;
 	bottom: 15%;
 	right: 49%;
-	color: var(--orange);
+	color: var(--color);
 	cursor: default;
 }.mouse-btn:hover{
-	color: var(--orange);
+	color: var(--color);
 }
 .mouse-btn svg{
 	width: 15px;
@@ -153,7 +152,7 @@ footer{
 	margin-top: 5px;
 }
 #typing span{
-	color: var(--gray);
+	color: var(--color3);
 }
 
 .glitch {
@@ -306,7 +305,7 @@ footer{
 	width: 100%;
 	-webkit-clip: rect(0px, 0px, 0px, 0px);
 	clip: rect(0px, 0px, 0px, 0px);
-	background: var(--orange);;
+	background: var(--color);;
 	color: var(--white);;
 }
 
@@ -319,24 +318,24 @@ footer{
 .glitch-link:before {
 	left: -3px;
 	top: -2px;
-	text-shadow: 2px 0 var(--orange);
-	box-shadow: 2px 0 var(--orange);
+	text-shadow: 2px 0 var(--color);
+	box-shadow: 2px 0 var(--color);
 }
 .glitch-link:after {
 	left: 2px;
 	bottom: -2px;
-	text-shadow: -1px 0 var(--orange);
-	box-shadow: -1px 0 var(--orange);
+	text-shadow: -1px 0 var(--color);
+	box-shadow: -1px 0 var(--color);
 }
 .glitch-link:hover {
-	background: var(--orange);
+	background: var(--color);
 	color: var(--white);
-	border: var(--orange);
+	border: var(--color);
 }
 
 .fill-glitch{
-	background: var(--orange);
-	border: var(--orange);
+	background: var(--color);
+	border: var(--color);
 }
 
 .glitch-link:hover:before {
@@ -436,18 +435,18 @@ footer{
 	transition: .4s ease;
 }
 .button span:hover{
-	color: var(--orange);
+	color: var(--color);
 }
 .button-group{
 	margin-left: 10px;
 }
 .button:active,
 .button.is-checked {
-  color: var(--orange);
+  color: var(--color);
 }
 
 .button.is-checked {
-  color: var(--orange);
+  color: var(--color);
 }
 
 
@@ -504,8 +503,8 @@ footer{
     line-height: 18px;
     font-weight: 500;
     font-size: 11px;
-    color: var(--orange);
-    border: 1px solid var(--orange);
+    color: var(--color);
+    border: 1px solid var(--color);
 }
 .blog-item .name{
 	text-transform: uppercase;
@@ -513,7 +512,7 @@ footer{
 	font-weight: 600;
 	transition: .4s ease all;
 }.blog-item .name:hover{
-	color: var(--orange);
+	color: var(--color);
 }
 .blog-item .description p{
 	margin-top: 10px;
@@ -544,7 +543,7 @@ footer{
 	top: 5%;
 	width: 90%;
 	height: 90%;
-	background: rgba(241, 107, 61, .92);
+	background: var(--color2);
 }
 
 
@@ -580,7 +579,7 @@ footer{
 	font-weight: bold;
 	transition: .4s ease;
 }.desc p:hover{
-	color: var(--orange);
+	color: var(--color);
 }
 
 
@@ -693,7 +692,7 @@ footer{
 	padding: 0;
 }
 .info-list span{
-	color: var(--orange);
+	color: var(--color);
 }
 .info-list li{
 	display: inline-block;
@@ -727,7 +726,7 @@ footer{
     top: 0;
     width: 1px;
     height: 100%;
-    background: #f26b38;
+    background: var(--color);
 }
 
 .resume-item .date{
@@ -740,8 +739,8 @@ footer{
     line-height: 18px;
     font-weight: 500;
     font-size: 11px;
-    color: var(--orange);
-    border: 1px solid var(--orange);
+    color: var(--color);
+    border: 1px solid var(--color);
 }
 .resume-item .date:before {
     content: '';
@@ -750,7 +749,7 @@ footer{
     position: absolute;
     left: -30px;
     top: 9px;
-    background: var(--orange);
+    background: var(--color);
 }
 .resume-item .name {
 	font-size: 12px;
@@ -769,7 +768,7 @@ footer{
 	font-size: 12px;
 }
 .service-item i{
-	color: var(--orange);
+	color: var(--color);
 	margin-right: 5px;
 	font-size: 15px;
 }
@@ -784,7 +783,7 @@ footer{
 	text-align: center;
 }
 .pricing-item i{
-	color: var(--orange);
+	color: var(--color);
 	font-size: 20px;
 	margin-bottom: 10px;
 }
@@ -823,7 +822,7 @@ footer{
 	text-decoration: line-through !important;
 }
 .pricing-item .new{
-	background: var(--orange);
+	background: var(--color);
 	color: var(--white);
 	padding: 0 4px;
 	border-radius: 2px;
