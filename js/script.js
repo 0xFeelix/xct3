@@ -284,7 +284,6 @@ setColor('color', '');
         $(this).addClass("nav-active");
       }
     });
-    localStorage.clear();
   });
   
 
