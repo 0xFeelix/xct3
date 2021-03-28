@@ -167,7 +167,7 @@ jQuery(function($){
 const theme = document.querySelector(':root');
 const btns = document.querySelectorAll('.colors');
 
-setColor('color', '#F26B38');
+setColor('color', '');
 
   function setColor(color, value) {
     if (localStorage.getItem(color)) {
