@@ -167,74 +167,80 @@ jQuery(function($){
 const theme = document.querySelector(':root');
 const btns = document.querySelectorAll('.colors');
 
-btns.forEach(function(btn){
+setColor('color', '#F26B38');
 
+  function setColor(color, value) {
+    if (localStorage.getItem(color)) {
+      theme.style.setProperty("--color", `${localStorage.getItem(color)}`);
+      theme.style.setProperty("--color2", `${localStorage.getItem(color)}`);
+    } else {
+      theme.style.setProperty("--color", value);
+      theme.style.setProperty("--color2", value);
+      localStorage.setItem('color', value);
+    }
+  }
+
+  function getColor(color) {
+    theme.style.setProperty("--color", color);
+    localStorage.setItem('color', color);
+  }
+  function getColor2(color) {
+    theme.style.setProperty("--color2", color);
+    localStorage.setItem('color', color);
+  }
+  
+  // Click
+  btns.forEach(function(btn){
+  
     btn.addEventListener("click", function(e){
+  
+      const color = e.currentTarget.classList;
+  
+      if(color.contains("green")){
+        getColor('#47A846');
+        getColor2('rgba(71, 168, 70, .92)');
+      }
 
-        const color = e.currentTarget.classList;
-
-        if(color.contains("green")){
-            theme.style.setProperty("--color", "#47A846");
-            theme.style.setProperty("--color2", "rgba(71, 168, 70, .92)");
-            theme.style.setProperty("--color3", "#47A846");
-            theme.style.setProperty("--color4", "#47A846");
-        }
-        else if(color.contains("grey")){
-            theme.style.setProperty("--color", "#6C757D");
-            theme.style.setProperty("--colo2", "rgba(108, 117, 125, .92)");
-            theme.style.setProperty("--color3", "#6C757D");
-            theme.style.setProperty("--color4", "#6C757D");
-        }
-        else if(color.contains("blue")){
-            theme.style.setProperty("--color", "#087afc");
-            theme.style.setProperty("--color2", "rgba(8, 122, 252, .92)");
-            theme.style.setProperty("--color3", "#087afc");
-            theme.style.setProperty("--color4", "#087afc");
-        }
-        else if(color.contains("yellow")){
-            theme.style.setProperty("--color", "#FFC22B");
-            theme.style.setProperty("--colo2", "rgba(255, 194, 43, .92)");
-            theme.style.setProperty("--color3", "#FFC22B");
-            theme.style.setProperty("--color4", "#FFC22B");
-        }
-        else if(color.contains("red")){
-            theme.style.setProperty("--color", "#DC3E45");
-            theme.style.setProperty("--color2", "rgba(220, 62, 69, .92)");
-            theme.style.setProperty("--color3", "#DC3E45");
-            theme.style.setProperty("--color4", "#DC3E45");
-        }
-        else if(color.contains("purple")){
-            theme.style.setProperty("--color", "#4D388C");
-            theme.style.setProperty("--color2", "rgba(77, 56, 140, .92)");
-            theme.style.setProperty("--color3", "#4D388C");
-            theme.style.setProperty("--color4", "#4D388C");
-        }
-        else if(color.contains("orange")){
-            theme.style.setProperty("--color", "#F86D26");
-            theme.style.setProperty("--color2", "rgba(248, 109, 38, .92)");
-            theme.style.setProperty("--color3", "#F86D26");
-            theme.style.setProperty("--color4", "#F86D26");
-        }
-        else if(color.contains("brown")){
-            theme.style.setProperty("--color", "#4F342E");
-            theme.style.setProperty("--color2", "rgba(79, 52, 46, .92)");
-            theme.style.setProperty("--color3", "#4F342E");
-            theme.style.setProperty("--color4", "#4F342E");
-        }
-        else if(color.contains("lime")){
-            theme.style.setProperty("--color", "#827717");
-            theme.style.setProperty("--color2", "rgba(130, 119, 23, .92)");
-            theme.style.setProperty("--color3", "#827717");
-            theme.style.setProperty("--color4", "#827717");
-        }
-        else{
-            theme.style.setProperty("--color", "#F26B38");
-            theme.style.setProperty("--color2", "rgba(241, 107, 61, .92)");
-            theme.style.setProperty("--color3", "#999999");
-            theme.style.setProperty("--color4", "#31313A");
-        }
+      else if(color.contains("grey")){
+        getColor('#6C757D');
+        getColor2('rgba(108, 117, 125, .92)');
+        
+      }
+      else if(color.contains("blue")){
+        getColor('#087afc');
+        getColor2('rgba(8, 122, 252, .92)');
+        
+      }
+      else if(color.contains("yellow")){
+        getColor('#FFC22B');
+        getColor2('rgba(255, 194, 43, .92)');
+      }
+      else if(color.contains("red")){
+        getColor('#DC3E45');
+        getColor2('rgba(220, 62, 69, .92)');
+      }
+      else if(color.contains("purple")){
+        getColor('#4D388C');
+        getColor2('rgba(77, 56, 140, .92)');
+      }
+      else if(color.contains("orange")){
+        getColor('#F26B38');
+        getColor2('rgba(241, 107, 61, .92)');
+      }
+      else if(color.contains("brown")){
+        getColor('#4F342E');
+        getColor2('rgba(79, 52, 46, .92)');
+      }
+      else if(color.contains("lime")){
+        getColor('#827717');
+        getColor2('rgba(130, 119, 23, .92)');
+      }
+      else{
+        getColor('#F26B38');
+        getColor2('rgba(241, 107, 61, .92)');
+      }
     });
-});
+  });
 
 
 
