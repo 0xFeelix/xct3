@@ -284,7 +284,9 @@ setColor('color', '');
         $(this).addClass("nav-active");
       }
     });
+    localStorage.clear();
   });
+  
 
 // $('.palette-colors li').click(function(){
 
