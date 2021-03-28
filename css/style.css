@@ -74,6 +74,10 @@ header{
 	color: var(--color);
 }
 
+.nav-active{
+	color: var(--color) !important;
+}
+
 
 
 *::-webkit-scrollbar {

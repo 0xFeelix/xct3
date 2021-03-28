@@ -4,6 +4,9 @@
 	--color3: #999999;
 	--color4: #31313A;
 }
+.colors{
+	font-size: 0px ;
+}
 .green{background: #47A846;}
 .grey{background: #6C757D;}
 .blue{background: #087afc;}

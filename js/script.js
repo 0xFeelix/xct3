@@ -162,6 +162,13 @@ jQuery(function($){
 
 
 
+
+
+
+
+
+
+
 /* Color palette script */
 
 const theme = document.querySelector(':root');
@@ -244,11 +251,51 @@ setColor('color', '');
 
 
 
-$('.palette-colors li').click(function(){
+  $('.palette-colors li').click(function() {
+    $(".palette-colors li").removeClass("current-color");
+    $('.palette-colors li').removeAttr('id');
+    $(this).addClass("current-color");
 
-  $('.palette-colors li').removeClass('current-color');
-  $(this).addClass('current-color')
-});
+
+    var activeElement = $(this).text();
+    localStorage.setItem('current-color', activeElement);
+  });
+  $(document).ready(function() {
+    $(".palette-colors li").each(function(index) {
+      if ($(this).text() == localStorage.getItem('current-color')) {
+        $(this).addClass("current-color");
+      }
+    });
+  });
+
+
+  $('.menu-nav a').click(function() {
+    $(".menu-nav a").removeClass("nav-active");
+    $('.menu-nav a').removeAttr('id');
+    $(this).addClass("nav-active");
+
+
+    var activeElement = $(this).text();
+    localStorage.setItem('nav-active', activeElement);
+  });
+  $(document).ready(function() {
+    $(".menu-nav a").each(function(index) {
+      if ($(this).text() == localStorage.getItem('nav-active')) {
+        $(this).addClass("nav-active");
+      }
+    });
+  });
+
+// $('.palette-colors li').click(function(){
+
+//   $('.palette-colors li').removeClass('current-color');
+//   $(this).addClass('current-color')
+// });
+
+
+
+
+
 
 $('.palette-cog i').click(function(){
   $('.color-palette').toggleClass('active-palette');
