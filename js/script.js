@@ -251,23 +251,24 @@ setColor('color', '');
 
 
 
-  $('.palette-colors li').click(function() {
-    $(".palette-colors li").removeClass("current-color");
-    $('.palette-colors li').removeAttr('id');
-    $(this).addClass("current-color");
-
-
-    var activeElement = $(this).text();
-    localStorage.setItem('current-color', activeElement);
+  const $items = $('.palette-colors li').click(function() {
+    $items.removeClass('current-color')
+  
+    $(this).addClass('current-color')
+    const idx = $items.index(this);
+    localStorage.setItem('current-color', idx)
   });
-  $(document).ready(function() {
-    $(".palette-colors li").each(function(index) {
-      if ($(this).text() == localStorage.getItem('current-color')) {
-        $(this).addClass("current-color");
-      }
-    });
-  });
+  
+  // on page load check if item in storage and if so set class
+  const idx = localStorage.getItem('current-color')
+  if (!!idx) {
+    $items.eq(+idx).addClass('current-color')
+  }
 
+
+
+
+  
 
   $('.menu-nav a').click(function() {
     $(".menu-nav a").removeClass("nav-active");
