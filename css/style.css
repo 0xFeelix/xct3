@@ -936,7 +936,7 @@ footer{
 		height: calc(100vh - 100px);
 		background: var(--black);
 		z-index: 9;
-		box-shadow: 5px 1px 12px -5px rgba(242, 107, 56, 0.33);
+		box-shadow: 5px 1px 7px -6px var(--color);
 		transition: .4s;
 		overflow: hidden;
 	}
