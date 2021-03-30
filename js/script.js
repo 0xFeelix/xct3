@@ -266,39 +266,32 @@ setColor('color', '');
   }
 
 
-
-
-  
-
-  $('.menu-nav a').click(function() {
-    $(".menu-nav a").removeClass("nav-active");
-    $('.menu-nav a').removeAttr('id');
-    $(this).addClass("nav-active");
-
-
-    var activeElement = $(this).text();
-    localStorage.setItem('nav-active', activeElement);
-  });
-  $(document).ready(function() {
-    $(".menu-nav a").each(function(index) {
-      if ($(this).text() == localStorage.getItem('nav-active')) {
-        $(this).addClass("nav-active");
-      }
-    });
-  });
-  
-
-// $('.palette-colors li').click(function(){
-
-//   $('.palette-colors li').removeClass('current-color');
-//   $(this).addClass('current-color')
-// });
-
-
-
-
-
-
 $('.palette-cog i').click(function(){
   $('.color-palette').toggleClass('active-palette');
 })
+
+
+// Portfolio hovered
+var $Plinks = $('.element-item .image a');
+var $Pdesc = $('.desc p');
+
+$Plinks.on('mouseover', function(){
+  $(this).closest('.element-item').find($Pdesc).css('color','var(--color)');
+});
+
+$Plinks.on('mouseout', function(){
+  $(this).closest('.element-item').find($Pdesc).css('color','');
+});
+
+
+// Blog hovered
+var $Blinks = $('.blog-item .image a');
+var $Bdesc = $('.description .name');
+
+$Blinks.on('mouseover', function(){
+  $(this).closest('.blog-item').find($Bdesc).css('color','var(--color)');
+});
+
+$Blinks.on('mouseout', function(){
+  $(this).closest('.blog-item').find($Bdesc).css('color','');
+});

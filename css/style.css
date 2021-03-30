@@ -535,6 +535,7 @@ footer{
 	position: relative;
 }
 
+
 .element-item a:hover::after , .blog-item .image a:hover::after{
 	content: '';
 	font-family: 'Font Awesome 5 Pro';
